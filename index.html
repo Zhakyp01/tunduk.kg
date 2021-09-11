@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tunduk.kg</title>
     <link rel="stylesheet" href="/scss/style.css">
+    <script src="/js/text.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -339,30 +340,12 @@
             </footer>
         </div> 
         <div id="backtotop" class="back-to-top">
-            <button class="btn btn-dark" title="Back to Top" style="display: block;">
+            <button onclick="topFunction()" class="btn btn-dark" title="Back to Top" style="display: block;">
                 <i class="fa fa-angle-up"></i>
             </button>
         </div>
     </section> 
-    <script>
-        var mybutton = document.getElementById("backtotop");
-        
-        
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-       
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
+
 </html>
 
