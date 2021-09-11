@@ -1,0 +1,327 @@
+body {
+  box-sizing: border-box;
+}
+
+/*section header*/
+#header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/images/bence-halmosi-QKTR09C0lck-unsplash.jpg);
+  background-size: cover;
+  position: relative;
+}
+#header .header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7% 15%;
+}
+#header .header__log {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#header .header__log a {
+  color: red;
+  text-decoration: none;
+  font-size: 30px;
+}
+#header .menu ul li {
+  display: inline-block;
+}
+#header .menu ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+#header .menu ul li a:hover {
+  color: red;
+}
+#header .menu ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: red;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+#header .menu ul li:hover::after {
+  width: 100%;
+}
+#header .intro {
+  padding-top: 10px;
+}
+#header .intro .intro_inner {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  color: white;
+}
+#header .intro .intro_inner h1 {
+  font-weight: bold;
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+}
+#header .intro .intro_inner p {
+  padding: 20px 0;
+  font-size: 1.2rem;
+}
+#header .intro .intro_inner .intro_btn {
+  margin-top: 30px;
+}
+
+#main {
+  padding: 7% 15%;
+  background-color: #C8C6C6;
+  text-align: center;
+}
+#main h2 {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+#main .cards {
+  margin-right: 0;
+  padding-top: 40px;
+}
+#main .cards .shadow {
+  box-shadow: 2px 2px 1px grey;
+}
+#main .cards .shadow h5 {
+  font-family: "Montserrat-Medium";
+  font-weight: bold;
+}
+
+#sustour {
+  background-image: url(/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#sustour .info {
+  padding: 7% 15%;
+  font-family: "Montserrat";
+  color: white;
+}
+#sustour .info h3 {
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+#sustour .info p {
+  font-size: 30px;
+  font-weight: normal;
+  text-shadow: 1px 1px 1px grey;
+  padding-bottom: 20px;
+}
+
+#slide {
+  padding-top: 7%;
+  background-color: #C8C6C6;
+}
+#slide h3 {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  text-align: center;
+}
+#slide .carousel-item {
+  padding: 0 15% 7% 15%;
+}
+#slide h5 {
+  font-family: "Montserrat";
+  font-weight: bolder;
+}
+
+#contactus {
+  padding: 7% 15%;
+}
+#contactus .containerct {
+  display: flex;
+  justify-content: center;
+}
+#contactus .contact {
+  font-family: "Montserrat";
+  padding: 30px;
+}
+#contactus .contact h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  padding-bottom: 20px;
+}
+#contactus .contact p {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0;
+}
+#contactus select, #contactus textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#contactus .labls {
+  display: flex;
+  justify-content: space-between;
+}
+#contactus input[type=text] {
+  width: 48%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: horizontal;
+}
+#contactus .lastname {
+  margin-left: 185px;
+}
+#contactus input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#contactus input[type=submit]:hover {
+  background-color: #b11e1e;
+}
+
+.slideshow img {
+  max-width: 100%;
+  max-height: 600px;
+}
+
+.line hr {
+  background-color: #be0000;
+  max-height: 150px;
+  width: 100%;
+}
+
+#footer {
+  background-color: #C8C6C6;
+}
+#footer .title__tunduk {
+  color: red;
+  text-transform: uppercase;
+}
+#footer .footer__logo {
+  padding: 40px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: red;
+}
+#footer .footer-dark {
+  padding: 7% 15%;
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+#footer .footer-dark h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+#footer .footer-dark ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+#footer .footer-dark ul a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.6;
+}
+#footer .footer-dark ul a:hover {
+  color: red;
+}
+@media (max-width: 767px) {
+  #footer .footer-dark .item:not(.social) {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+#footer .footer-dark .item.text {
+  margin-bottom: 36px;
+}
+@media (max-width: 767px) {
+  #footer .footer-dark .item.text {
+    margin-bottom: 0;
+  }
+}
+#footer .footer-dark .item.text p {
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+#footer .footer-dark .item.social {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  #footer .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+#footer .footer-dark .item.social > a {
+  font-size: 20px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+#footer .footer-dark .item.social > a:hover {
+  color: red;
+  box-shadow: 0 0 0 1px rgba(248, 0, 0, 0.918);
+}
+#footer .footer-dark .copyright {
+  text-align: center;
+  padding-top: 24px;
+  opacity: 0.3;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+#footer .back-to-top {
+  position: relative;
+  z-index: 2;
+}
+#footer .back-to-top .btn-dark {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 0;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: #b63f3f;
+  border-color: #a32929;
+  display: none;
+  z-index: 999;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+#footer .back-to-top .btn-dark:hover {
+  cursor: pointer;
+  background: #fb5126;
+  border-color: #fa4f24;
+}/*# sourceMappingURL=style.css.map */
